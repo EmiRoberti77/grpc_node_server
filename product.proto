@@ -1,0 +1,36 @@
+syntax = "proto3";
+package product;
+
+service Product{
+    rpc CreateProduct(ProductItem) returns (ProductItem);
+    rpc ReadProduct(ProductID) returns (ProductItem);
+    rpc ReadProducts(VoidParam) returns (ProductItems);
+}
+
+enum Category {
+    SMARTPHONE = 0;
+    CAMERA = 1;
+    HEADPHONES = 2;
+    TELEVISION = 3;
+    KEYBOARD = 4;
+    DESKTOP = 5;
+    MONITOR = 6;
+}
+
+message VoidParam {}
+
+message ProductID {
+    int32 id = 1;
+}
+
+message ProductItem {
+    int32 id = 1;
+    string name = 2;
+    string description = 3;
+    float price = 4;
+    Category category = 5;
+}
+
+message ProductItems {
+    repeated ProductItem products = 1;
+}
