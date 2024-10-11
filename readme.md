@@ -98,3 +98,16 @@ You can use any gRPC client to interact with the server once it’s running, suc
 - • gRPC CLI
 - • Postman (with gRPC support)
 - • Custom gRPC client implementations in various programming languages like Python, Java, or Go.
+
+## sample using postman to create a gRPC request
+
+![Screenshot 2024-10-11 at 06 25 07](https://github.com/user-attachments/assets/b253ed0a-fe6d-4362-8d41-1048360c8b34)
+
+## gRPC flow 
+
+( diagram taken from https://grpc.io/docs/what-is-grpc/introduction/ )
+![Screenshot 2024-10-11 at 06 26 31](https://github.com/user-attachments/assets/62e3157a-6e56-4638-975a-17e4815f56eb)
+
+## Docs
+
+- https://grpc.io/
